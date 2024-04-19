@@ -10,9 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@uniformdev/canvas": "^19.136.0",
+    "@uniformdev/canvas-vue": "^19.136.0",
+    "@uniformdev/context": "^19.136.0",
+    "@uniformdev/context-vue": "^19.136.0",
+    "@uniformdev/uniform-nuxt": "^19.136.0",
     "nuxt": "^3.11.2",
     "nuxt-security": "^1.3.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }
