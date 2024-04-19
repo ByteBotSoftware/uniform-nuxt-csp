@@ -1,24 +1,26 @@
-# Nuxt dev/build outputs
-.output
-.data
+node_modules
+*.log*
 .nuxt
 .nitro
 .cache
+nuxt.d.ts
+.output
 dist
+.DS_STORE
+.history
+.cache
+.data
 
-# Node dependencies
-node_modules
+# Local Netlify folder
+.netlify
+.vercel
 
-# Logs
-logs
-*.log
+# Local editor
+# .vscode/
+*.code-workspace
+.idea/
 
-# Misc
-.DS_Store
-.fleet
-.idea
+wrangler.toml
+package-lock.json
 
-# Local env files
 .env
-.env.*
-!.env.example
