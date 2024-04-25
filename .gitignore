@@ -1,26 +1,37 @@
-node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-nuxt.d.ts
-.output
-dist
-.DS_STORE
-.history
-.cache
-.data
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Local Netlify folder
-.netlify
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# nuxt.js
+.nuxt
+.output
+.nitro
+dist
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+*.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
 .vercel
 
-# Local editor
-# .vscode/
-*.code-workspace
-.idea/
-
-wrangler.toml
+# ignore for the sake of StackBlitz
 package-lock.json
-
-.env

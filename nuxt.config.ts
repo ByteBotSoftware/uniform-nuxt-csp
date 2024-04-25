@@ -1,19 +1,17 @@
-import type { ManifestV2 } from '@uniformdev/context';
-import manifestJson from './context-manifest.json';
+import manifest from "./lib/uniform/contextManifest.json";
+import type { ManifestV2 } from "@uniformdev/context";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: ['~/assets/css/styles.css'],
-  modules: ['@uniformdev/uniform-nuxt', '@nuxtjs/tailwindcss'],
+  css: ["~/styles/global.css"],
+  modules: ["@uniformdev/uniform-nuxt"],
   uniform: {
     projectId: process.env.UNIFORM_PROJECT_ID,
     readOnlyApiKey: process.env.UNIFORM_API_KEY,
-    apiHost: process.env.UNIFORM_CLI_BASE_URL || undefined,
-    edgeApiHost: process.env.UNIFORM_CLI_BASE_EDGE_URL || undefined,
-    outputType: process.env.OUTPUT_TYPE || undefined,
-    manifest: manifestJson as ManifestV2,
+    apiHost: process.env.UNIFORM_CLI_BASE_URL,
+    edgeApiHost: process.env.UNIFORM_CLI_BASE_EDGE_URL,
+    manifest: manifest as ManifestV2,
     defaultConsent: true,
-    // If you prefer to have full control over your Uniform Context instance:
-    // uniformContextPath: './path-to-my-uniform-context-instance',
+    outputType: "standard",
   },
 });
