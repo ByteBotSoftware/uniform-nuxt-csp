@@ -35,3 +35,6 @@ dist
 
 # ignore for the sake of StackBlitz
 package-lock.json
+
+# env
+.env
