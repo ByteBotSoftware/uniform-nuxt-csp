@@ -3,7 +3,7 @@ import type { ComponentInstance } from "@uniformdev/canvas";
 
 interface Props {
   title: string;
-  description?: string;
+  description?: object;
   component: ComponentInstance;
 }
 
