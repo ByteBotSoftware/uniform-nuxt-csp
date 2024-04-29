@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       // Allows for the iframe to be embedded in the Uniform preview
       crossOriginResourcePolicy: "cross-origin",
       // Allows for the iframe to be embedded in the Uniform preview
-      referrerPolicy: "unsafe-url",
+      referrerPolicy: "origin",
       contentSecurityPolicy: {
         "frame-ancestors": ["'self'", "https://uniform.app"],
       },
