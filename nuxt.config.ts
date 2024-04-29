@@ -20,6 +20,8 @@ export default defineNuxtConfig({
       // and uniform preview in staging
       crossOriginEmbedderPolicy: "unsafe-none",
       // Allows for the iframe to be embedded in the Uniform preview
+      crossOriginResourcePolicy: "cross-origin",
+      // Allows for the iframe to be embedded in the Uniform preview
       referrerPolicy: "unsafe-url",
       contentSecurityPolicy: {
         "frame-ancestors": ["'self'", "https://uniform.app"],
