@@ -25,11 +25,7 @@ export default defineNuxtConfig({
         // "base-uri": ["'self'"],
         // "font-src": ["'self'", "https:", "data:"],
         // "form-action": ["'self'"],
-        "frame-ancestors": [
-          "'self'",
-          "https://uniform.app",
-          // "https://app.contentstack.com",
-        ],
+        "frame-ancestors": false,
         // "img-src": ["'self'", "https:", "data:"],
         // "object-src": ["'none'"],
         // "script-src-attr": ["'none'"],
