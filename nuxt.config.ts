@@ -25,7 +25,6 @@ export default defineNuxtConfig({
       referrerPolicy: false,
       strictTransportSecurity: false,
       xContentTypeOptions: false,
-      xDNSPrefetchControl: false,
       xFrameOptions: false,
       contentSecurityPolicy: {
         // "base-uri": ["'self'"],
