@@ -17,11 +17,20 @@ export default defineNuxtConfig({
   security: {
     headers: {
       // To allow for nuxt dev tools in development
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
+      crossOriginEmbedderPolicy: false,
       // xXSSProtection: '1; mode=block',
-      crossOriginResourcePolicy: "cross-origin",
+      crossOriginResourcePolicy: false,
+      crossOriginOpenerPolicy: false,
+      originAgentCluster: false,
+      referrerPolicy: false,
+      strictTransportSecurity: false,
+      xContentTypeOptions: false,
+      xDNSPrefetchControl: false,
+      xDownloadOptions: false,
       xFrameOptions: false,
+      xPermittedCrossDomainPolicies: false,
+      xXSSProtection: false,
+      permissionsPolicy: false,
       contentSecurityPolicy: {
         // "base-uri": ["'self'"],
         // "font-src": ["'self'", "https:", "data:"],
