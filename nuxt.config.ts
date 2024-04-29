@@ -17,8 +17,7 @@ export default defineNuxtConfig({
   security: {
     headers: {
       // To allow for nuxt dev tools in development
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
+      crossOriginEmbedderPolicy: false,
       // xXSSProtection: '1; mode=block',
       crossOriginResourcePolicy: "cross-origin",
       referrerPolicy: false,
