@@ -1,10 +1,10 @@
 <script setup lang="ts">
 definePageMeta({
   redirect: (to) => {
-    const { path } = to.query;
+    const { path, ...rest } = to.query;
     return {
       path: (Array.isArray(path) ? path[0] : path) ?? "/",
-      query: to.query,
+      query: rest,
     };
   },
 });
