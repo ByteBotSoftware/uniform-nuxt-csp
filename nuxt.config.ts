@@ -20,7 +20,6 @@ export default defineNuxtConfig({
       crossOriginEmbedderPolicy: false,
       // xXSSProtection: '1; mode=block',
       crossOriginResourcePolicy: "cross-origin",
-      referrerPolicy: false,
       contentSecurityPolicy: {
         // "base-uri": ["'self'"],
         // "font-src": ["'self'", "https:", "data:"],
