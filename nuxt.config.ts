@@ -21,6 +21,7 @@ export default defineNuxtConfig({
         process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
       // xXSSProtection: '1; mode=block',
       crossOriginResourcePolicy: "cross-origin",
+      xFrameOptions: false,
       contentSecurityPolicy: {
         // "base-uri": ["'self'"],
         // "font-src": ["'self'", "https:", "data:"],
