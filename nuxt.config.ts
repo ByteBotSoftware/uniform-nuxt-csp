@@ -23,7 +23,6 @@ export default defineNuxtConfig({
       crossOriginOpenerPolicy: false,
       originAgentCluster: false,
       referrerPolicy: false,
-      strictTransportSecurity: false,
       xFrameOptions: false,
       contentSecurityPolicy: {
         // "base-uri": ["'self'"],
