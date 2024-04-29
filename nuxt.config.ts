@@ -17,23 +17,12 @@ export default defineNuxtConfig({
   security: {
     headers: {
       // To allow for nuxt dev tools in development
-      crossOriginEmbedderPolicy: false,
-      // xXSSProtection: '1; mode=block',
-      crossOriginResourcePolicy: "cross-origin",
+      // and uniform preview in staging
+      crossOriginEmbedderPolicy: "unsafe-none",
+      // Allows for the iframe to be embedded in the Uniform preview
+      referrerPolicy: "unsafe-url",
       contentSecurityPolicy: {
-        // "base-uri": ["'self'"],
-        // "font-src": ["'self'", "https:", "data:"],
-        // "form-action": ["'self'"],
-        "frame-ancestors": [
-          "'self'",
-          "https://uniform.app",
-          // "https://app.contentstack.com",
-        ],
-        // "img-src": ["'self'", "https:", "data:"],
-        // "object-src": ["'none'"],
-        // "script-src-attr": ["'none'"],
-        // "style-src": ["'self'", "https:", "'unsafe-inline'"],
-        // "upgrade-insecure-requests": true,
+        "frame-ancestors": ["'self'", "https://uniform.app"],
       },
     },
   },
