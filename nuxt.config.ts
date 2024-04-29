@@ -30,7 +30,6 @@ export default defineNuxtConfig({
       xFrameOptions: false,
       xPermittedCrossDomainPolicies: false,
       xXSSProtection: false,
-      permissionsPolicy: false,
       contentSecurityPolicy: {
         // "base-uri": ["'self'"],
         // "font-src": ["'self'", "https:", "data:"],
