@@ -15,27 +15,6 @@ export default defineNuxtConfig({
     outputType: "standard",
   },
   security: {
-    headers: {
-      // To allow for nuxt dev tools in development
-      crossOriginEmbedderPolicy:
-        process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
-      // xXSSProtection: '1; mode=block',
-      crossOriginResourcePolicy: "cross-origin",
-      contentSecurityPolicy: {
-        // "base-uri": ["'self'"],
-        // "font-src": ["'self'", "https:", "data:"],
-        // "form-action": ["'self'"],
-        "frame-ancestors": [
-          "'self'",
-          "https://uniform.app",
-          // "https://app.contentstack.com",
-        ],
-        // "img-src": ["'self'", "https:", "data:"],
-        // "object-src": ["'none'"],
-        // "script-src-attr": ["'none'"],
-        // "style-src": ["'self'", "https:", "'unsafe-inline'"],
-        // "upgrade-insecure-requests": true,
-      },
-    },
+    headers: false,
   },
 });
