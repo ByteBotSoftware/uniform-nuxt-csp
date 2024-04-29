@@ -29,7 +29,6 @@ export default defineNuxtConfig({
       xDownloadOptions: false,
       xFrameOptions: false,
       xPermittedCrossDomainPolicies: false,
-      xXSSProtection: false,
       contentSecurityPolicy: {
         // "base-uri": ["'self'"],
         // "font-src": ["'self'", "https:", "data:"],
